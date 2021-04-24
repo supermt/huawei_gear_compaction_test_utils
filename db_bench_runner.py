@@ -443,11 +443,11 @@ class DB_launcher:
             pathlib.Path(material_dir).mkdir(parents=True, exist_ok=True)
             temp_para_dict["db"] = str(material[0])
             for cpu_count in env.get_current_CPU_experiment_set():
-                result_dir = material_dir + "_" + str(cpu_count) + "CPU"
+                result_dir = material_dir + "/" + str(cpu_count) + "CPU"
                 temp_para_dict["max_background_compactions"] = str(cpu_count)
                 for memory_budget in env.get_current_memory_experiment_set():
                     temp_para_dict["write_buffer_size"] = memory_budget
-                    target_dir = result_dir + "_" + \
+                    target_dir = result_dir + "/" + \
                         str(int(memory_budget / 1024 / 1024)) + "MB"
                     if create_target_dir(target_dir):
                         print("existing files in %s" % target_dir)
