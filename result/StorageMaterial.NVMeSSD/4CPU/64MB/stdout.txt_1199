@@ -1,0 +1,25 @@
+Initializing RocksDB Options from the specified file
+Initializing RocksDB Options from command-line flags
+/home/jinghuan/rocksdb_nvme
+Keys:       15 bytes each
+Values:     10 bytes each (5 bytes after compression)
+Entries:    4831838208
+Prefix:    0 bytes
+Keys per prefix:    0
+RawSize:    115200.0 MB (estimated)
+FileSize:   92160.0 MB (estimated)
+Write rate: 0 bytes/second
+Read rate: 0 ops/second
+Compression: NoCompression
+Compression sampling rate: 0
+Memtablerep: skip_list
+Perf Level: 1
+------------------------------------------------
+0 point(s) detected
+no tuner
+Initializing RocksDB Options from the specified file
+Initializing RocksDB Options from command-line flags
+/home/jinghuan/rocksdb_nvme
+DB path: [/home/jinghuan/rocksdb_nvme]
+opened report file
+fillrandom   :       2.526 micros/op 395833 ops/sec;    9.4 MB/s
